@@ -1,0 +1,17 @@
+{
+  "name": "dia_4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:dev": "yarn mocha -w --exit ./test/",
+    "test": "yarn mocha --parallel ./test/",
+    "test:cov": "yarn nyc --check-coverage --instrument --reporter=html --reporter=text yarn test",
+    "start": "node src/"
+  },
+  "dependencies": {
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.3"
+  }
+}
